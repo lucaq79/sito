@@ -1,7 +1,0 @@
-# Sito dell'Avv. Luca Quartapelle — Foro di Teramo
-# I motori di ricerca possono indicizzare tutto il sito.
-
-User-agent: *
-Allow: /
-
-Sitemap: https://avvocatolucaquartapelle.com/sitemap.xml
