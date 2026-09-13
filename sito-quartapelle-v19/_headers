@@ -1,0 +1,20 @@
+# Intestazioni di sicurezza — file letto automaticamente da Netlify.
+# Non va aperto né modificato: basta che resti nella cartella del sito.
+# Il sito non carica nulla da server esterni: la regola qui sotto lo impone.
+#
+# CONTENUTI DI TERZI — la direttiva frame-src è oggi impostata su 'none':
+# nessun contenuto altrui può essere incorporato, neppure dopo il consenso.
+# È voluto: il meccanismo di consenso (consenso.js) è predisposto ma inoperante
+# finché non si decide quale fornitore ammettere. Per abilitarne uno, elencarne
+# qui il dominio, per esempio:
+#     frame-src https://www.youtube-nocookie.com
+# Aggiungere SOLO i domini effettivamente utilizzati: ogni dominio in più è una
+# porta aperta. Dopo la modifica ripubblicare il sito e verificare.
+
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), interest-cohort=()
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  Content-Security-Policy: default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' https://gc.zgo.at; img-src 'self' data: https://avvocatolucaquartapelle.goatcounter.com; font-src 'self'; connect-src 'self' https://avvocatolucaquartapelle.goatcounter.com; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; frame-src https://www.facebook.com; object-src 'none'

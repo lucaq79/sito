@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Avvocato a Teramo — Studio Legale Luca Quartapelle</title>
+<meta name="description" content="Studio legale a Teramo: penale, civile e risarcimenti, sinistri stradali, famiglia, immigrazione, esecuzioni. Anche da remoto. Tel. 0861 1886417.">
+<meta name="author" content="Avv. Luca Quartapelle">
+<meta name="theme-color" content="#0a1a33">
+<link rel="canonical" href="https://avvocatolucaquartapelle.com/">
+<meta name="robots" content="index, follow">
+<meta name="geo.placename" content="Teramo">
+<meta name="geo.region" content="IT-TE">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="it_IT">
+<meta property="og:site_name" content="Avv. Luca Quartapelle">
+<meta property="og:title" content="Avv. Luca Quartapelle — Studio Legale a Teramo">
+<meta property="og:description" content="In studio a Teramo e, anche da remoto, in tutta Italia.">
+<meta property="og:url" content="https://avvocatolucaquartapelle.com/">
+<!-- ANTEPRIMA DEI COLLEGAMENTI — è l'immagine che compare quando qualcuno
+     condivide il sito su WhatsApp, LinkedIn o Facebook. Il file anteprima.png
+     deve stare nella cartella del sito, accanto a questa pagina. -->
+<meta property="og:image" content="https://avvocatolucaquartapelle.com/anteprima.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Avv. Luca Quartapelle — Studio Legale, Foro di Teramo">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Attorney","name":"Avv. Luca Quartapelle","url":"https://avvocatolucaquartapelle.com/","sameAs":["https://www.facebook.com/avvocatoquartapelle"],"image":"https://avvocatolucaquartapelle.com/anteprima.png","logo":"https://avvocatolucaquartapelle.com/favicon-192.png","telephone":"+3908611886417","email":"info@avvocatolucaquartapelle.com","vatID":"01950940674","address":{"@type":"PostalAddress","streetAddress":"Via G. D'Annunzio 12","postalCode":"64100","addressLocality":"Teramo","addressRegion":"Abruzzo","addressCountry":"IT"},"areaServed":"Italia","availableLanguage":"it","knowsAbout":["Diritto penale","Diritto civile","Risarcimento del danno","Sinistri stradali","Infortunistica stradale","Esecuzioni forzate","Diritto dell'immigrazione","Diritto di famiglia","Amministrazione di sostegno","Patrocinio a spese dello Stato"],"memberOf":{"@type":"Organization","name":"Ordine degli Avvocati di Teramo"}}
+</script>
+
+<style>
+@font-face{font-family:"Source Serif";src:url("SourceSerif4-Medium.woff2") format("woff2");font-weight:300 500;font-style:normal;font-display:swap}
+@font-face{font-family:"Source Serif";src:url("SourceSerif4-Semibold.woff2") format("woff2");font-weight:600 800;font-style:normal;font-display:swap}
+
+/* ==============================================================
+   STUDIO LEGALE QUARTAPELLE — "istituzione centenaria, sito d'oggi"
+   Navy profondo · avorio · oro bronzo. Nessuna risorsa esterna:
+   la scenografia della copertina è disegnata in codice e viene
+   sostituita dalla fotografia reale quando disponibile.
+   ============================================================== */
+:root{
+  --navy:#0a1a33; --navy-2:#0e2547; --navy-3:#143263;
+  --blu:#1a60b0; --blu-l:#3f83d1;
+  --oro:#b99354; --oro-l:#d4b479; --oro-s:#8f6f3c;
+  --avorio:#f3efe8; --carta:#faf8f4; --bianco:#fff;
+  --testo:#252a33; --tenue:#5d6470; --filo:#e3ddd2; --filo-scuro:rgba(212,180,121,.28);
+  /* Caratteri di sistema soltanto: nessun font scaricato da server esterni.
+     Su Mac i titoli escono in Didot; su Windows in Bodoni MT se presente,
+     altrimenti in Constantia, che è più raffinata del comune Georgia. */
+  --display:"Source Serif",Constantia,"Palatino Linotype",Georgia,"Times New Roman",serif;
+  --serif:Constantia,"Palatino Linotype",Georgia,"Times New Roman",serif;
+  --sans:-apple-system,BlinkMacSystemFont,system-ui,"Segoe UI Variable Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+::selection{background:var(--oro);color:var(--navy)}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);color:var(--testo);background:var(--carta);line-height:1.7;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+img,svg{display:block;max-width:100%}
+.wrap{max-width:1200px;margin:0 auto;padding:0 28px}
+
+/* RIFINITURE TIPOGRAFICHE
+   1. I titoli non spezzano più lasciando una parola sola nell'ultima riga.
+   2. Nei testi lunghi l'ultima riga non resta orfana di una sola parola.
+   3. I titoli grandi in Didot/Bodoni hanno bisogno di lettere un filo più
+      strette per non apparire slegate.
+   4. Cliccando una voce di menu il titolo non finisce più sotto la barra fissa. */
+h1,h2,h3{text-wrap:balance}
+p,li,dd{text-wrap:pretty}
+h1,.testata h2,.banda h2{letter-spacing:-.012em}
+section[id],div[id]{scroll-margin-top:104px}
+.numeri{font-variant-numeric:oldstyle-num}
+.skip{position:absolute;left:-9999px}
+.skip:focus{left:16px;top:16px;z-index:3000;background:var(--navy);color:#fff;padding:.7rem 1rem}
+:focus-visible{outline:3px solid var(--oro);outline-offset:3px}
+
+/* ---------- marchio ---------- */
+.marchio svg{height:60px;width:auto;display:block}
+#top.giu .marchio svg{height:46px}
+@media(max-width:520px){.marchio svg{height:46px}}
+
+/* ---------- barra ---------- */
+/* La barra del menu parte SOTTO la fascia dei recapiti (l'altezza esatta la
+   calcola lo script in fondo alla pagina): prima le stava sopra, trasparente,
+   e intercettava i clic su English, WhatsApp ed email. */
+#top{position:fixed;inset:0 0 auto;z-index:1000;transition:background .3s,padding .3s,box-shadow .3s;padding:22px 0}
+#top.giu{background:rgba(12,20,32,.96);backdrop-filter:blur(12px);padding:12px 0;box-shadow:0 6px 30px rgba(0,0,0,.35)}
+#top .wrap{display:flex;align-items:center;justify-content:space-between}
+.menu{display:flex;align-items:center;gap:34px}
+.menu a{font-size:.74rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:rgba(243,239,232,.72);padding:.35rem 0;border-bottom:1px solid transparent;transition:.3s}
+.menu a:hover{color:var(--oro-l);border-bottom-color:var(--oro)}
+.tel-btn{border:1px solid var(--oro);color:var(--oro-l);font-weight:600;font-size:.82rem;letter-spacing:.05em;padding:.68rem 1.3rem;transition:.25s}
+.tel-btn:hover{background:var(--oro);color:var(--navy)}
+@media(max-width:920px){.menu a:not(.tel-btn){display:none}}
+
+/* ---------- copertina ---------- */
+#hero{position:relative;min-height:78vh;min-height:78svh;display:flex;align-items:center;color:var(--avorio);overflow:hidden;
+  background:
+    radial-gradient(115% 85% at 76% 14%,rgba(185,147,84,.22) 0%,rgba(185,147,84,.04) 46%,rgba(185,147,84,0) 68%),
+    linear-gradient(168deg,#0d2144 0%,#0a1a33 48%,#06111f 100%)}
+
+/* SFONDO DI COPERTINA (1 set. 2026, su indicazione del titolare): colonnato
+   di palazzo di giustizia — fotografia Unsplash di Adrien Delforge, licenza
+   libera per uso commerciale. FILE RICHIESTO NELLA CARTELLA: sfondo-copertina.jpg
+   Se il file manca, resta il fondo blu sfumato: il sito non si rompe.
+   Nel riquadro del Profilo va un dettaglio della stessa fotografia. */
+.scena{position:absolute;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.scena img{position:absolute;inset:-22px;width:calc(100% + 44px);height:calc(100% + 44px);
+  object-fit:cover;object-position:50% 50%;
+  filter:brightness(.88) saturate(.85);transform:scale(1.02)}
+@media(max-width:900px){.scena img{object-position:56% 50%}}
+/* Velatura: scura a sinistra e in basso, dove poggia il testo. */
+.velo{position:absolute;inset:0;z-index:1;background:
+  linear-gradient(97deg,rgba(6,17,33,.86) 0%,rgba(6,17,33,.55) 44%,rgba(6,17,33,.14) 74%),
+  linear-gradient(180deg,rgba(6,17,33,.22) 0%,rgba(6,17,33,0) 38%,rgba(6,17,33,.7) 100%)}
+.hero-c{position:relative;z-index:2;padding:130px 0 80px;max-width:760px;text-shadow:0 2px 22px rgba(4,12,26,.85),0 1px 4px rgba(4,12,26,.9)}
+.hero-pre{display:flex;align-items:center;gap:18px;margin-bottom:2rem}
+.hero-pre .filo-oro{width:62px;height:1px;background:var(--oro)}
+.hero-pre span{font-size:.88rem;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:var(--oro-l)}
+@media(max-width:520px){.hero-pre span{font-size:.74rem;letter-spacing:.24em}.hero-pre .filo-oro{width:40px}}
+#hero h1{font-family:var(--display);font-weight:600;font-size:clamp(2.3rem,5vw,4rem);line-height:1.08;letter-spacing:0;margin-bottom:1.3rem}
+.hero-titolo-pre{display:block;font-family:var(--sans);font-size:clamp(.8rem,1.4vw,.95rem);font-weight:600;letter-spacing:.44em;text-transform:uppercase;color:var(--oro-l);margin-bottom:.9rem}
+.hero-luogo{font-size:.82rem;font-weight:600;letter-spacing:.4em;text-transform:uppercase;color:var(--oro-l)}
+.hero-riga{width:68px;height:1px;background:var(--oro);margin:1.7rem 0}
+.hero-claim{max-width:58ch;margin:0 0 1.6rem}
+.hero-claim p{font-family:var(--display);font-weight:400;font-style:italic;
+  font-size:clamp(1.1rem,2.35vw,1.55rem);line-height:1.42;color:rgba(243,239,232,.94)}
+.hero-claim cite{display:block;font-style:normal;font-family:var(--sans);font-size:.7rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--oro-l);margin-top:.85rem}
+.hero-sub{font-size:.95rem;line-height:1.8;color:rgba(243,239,232,.66);max-width:56ch;margin-bottom:2.4rem}
+.hero-remoto{display:inline-block;margin-top:.55rem;color:var(--avorio);font-weight:600;letter-spacing:.02em}
+@media(max-width:520px){.hero-riga{margin:1.2rem 0}.hero-titolo-pre{letter-spacing:.3em}}
+.hero-az{display:flex;gap:14px;flex-wrap:wrap}
+.bott{display:inline-block;font-weight:600;font-size:.76rem;letter-spacing:.16em;text-transform:uppercase;padding:1.08rem 2.1rem;transition:.3s;border:1px solid transparent}
+.bott.oro{background:var(--oro);color:var(--navy)}
+.bott.oro:hover{background:var(--oro-l);transform:translateY(-2px)}
+.bott.linea{border-color:rgba(243,239,232,.45);color:var(--avorio)}
+.bott.linea:hover{border-color:var(--oro);color:var(--oro-l)}
+.hero-nota{margin-top:1.5rem;font-size:.85rem;color:rgba(243,239,232,.55)}
+.hero-nota a{color:var(--oro-l);border-bottom:1px solid rgba(212,180,121,.4)}
+.giu-freccia{position:absolute;bottom:34px;left:50%;transform:translateX(-50%);z-index:2;width:1px;height:56px;background:linear-gradient(180deg,var(--oro),transparent)}
+
+/* ---------- tre tessere di accesso ----------
+   Fascia CHIARA (18 ago. 2026, revisione su modello PAD): fondo bianco,
+   testo navy, icone oro. Prima era navy pieno. */
+.tessere{background:var(--bianco);color:var(--testo);border-top:1px solid var(--filo);border-bottom:1px solid var(--filo)}
+.tessere .wrap{display:grid;grid-template-columns:repeat(3,1fr);padding-left:0;padding-right:0}
+.tess{display:flex;flex-direction:column;align-items:center;text-align:center;gap:.85rem;
+  padding:2.9rem 1.6rem;transition:.3s}
+.tess+.tess{border-left:1px solid var(--filo)}
+.tess:hover{background:var(--carta)}
+.tess svg{width:34px;height:34px;fill:none;stroke:var(--oro-s);stroke-width:1.25;
+  stroke-linecap:round;stroke-linejoin:round;transition:.3s}
+.tess:hover svg{stroke:var(--oro)}
+.tess b{font-size:.76rem;font-weight:700;letter-spacing:.26em;text-transform:uppercase;color:var(--navy)}
+.tess span{font-size:.83rem;line-height:1.55;color:var(--tenue);max-width:28ch}
+.tess em{font-style:normal;color:var(--oro-s);font-size:1rem;line-height:1;transition:.3s}
+.tess:hover em{transform:translateX(3px)}
+@media(max-width:680px){.tessere .wrap{grid-template-columns:1fr}
+  .tess{padding:2.2rem 1.6rem}.tess+.tess{border-left:0;border-top:1px solid var(--filo)}}
+
+/* ---------- sezioni ---------- */
+.sez{padding:110px 0}
+.sez.chiara{background:var(--bianco)}
+.testata{max-width:760px;margin-bottom:3.6rem}
+.testata.centro{margin-left:auto;margin-right:auto;text-align:center}
+.occhiello{display:flex;align-items:center;gap:14px;margin-bottom:1.1rem}
+.testata.centro .occhiello{justify-content:center}
+.occhiello .filo-oro{width:48px;height:1px;background:var(--oro)}
+.occhiello span{font-size:.82rem;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--oro-s)}
+@media(max-width:520px){.occhiello span{font-size:.72rem;letter-spacing:.24em}}
+.testata h2{font-family:var(--display);font-weight:400;font-size:clamp(2rem,4.4vw,3.1rem);color:var(--navy);line-height:1.1}
+.testata p{margin-top:1.1rem;color:var(--tenue);font-size:1.02rem}
+@media(max-width:640px){.sez{padding:72px 0}}
+
+/* ---------- materie ---------- */
+/* Cinque tessere: tre nella prima riga, due più larghe nella seconda
+   (griglia a 6 colonne, ogni tessera ne occupa 2 o 3): nessun vuoto. */
+/* CAROSELLO DELLE MATERIE — tessere tutte identiche che scorrono di lato:
+   nessuna riga spaiata, nessuna colonna vuota, qualunque sia il loro numero.
+   Si scorre col dito, con la rotellina o con le due frecce. */
+.carosello{position:relative}
+/* sfumature ai due bordi: la fila "sfuma" e si capisce che prosegue */
+.carosello::before,.carosello::after{content:"";position:absolute;top:1px;bottom:1px;width:70px;z-index:4;pointer-events:none;transition:opacity .3s}
+.carosello::before{left:1px;background:linear-gradient(90deg,var(--bianco),rgba(255,255,255,0))}
+.carosello::after{right:1px;background:linear-gradient(270deg,var(--bianco),rgba(255,255,255,0))}
+.carosello.a-inizio::before{opacity:0}
+.carosello.a-fine::after{opacity:0}
+/* riga di comando sotto: pallini di posizione + dicitura */
+.scorri-info{display:flex;align-items:center;justify-content:center;gap:1.2rem;margin-top:1.5rem}
+.pallini{display:flex;gap:.45rem}
+.pallini i{width:7px;height:7px;border-radius:50%;background:var(--filo);transition:.3s;display:block}
+.pallini i.qui{background:var(--oro);transform:scale(1.3)}
+.scorri-info span{font-size:.68rem;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--oro-s);white-space:nowrap}
+@media(max-width:760px){.carosello::before,.carosello::after{width:38px}}
+.griglia-m{display:flex;gap:1px;background:var(--filo);border:1px solid var(--filo);
+  overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;
+  scrollbar-width:none;-ms-overflow-style:none}
+.griglia-m::-webkit-scrollbar{display:none}
+/* le tessere sono 2,55 per schermata: la terza resta tagliata a metà e
+   rende evidente che la fila continua */
+.mat{flex:0 0 calc((100% - 2px)/2.55);scroll-snap-align:start;min-width:0}
+.frecce{position:absolute;top:50%;left:0;right:0;display:flex;justify-content:space-between;
+  transform:translateY(-50%);pointer-events:none;z-index:5}
+.frecce button{pointer-events:auto;width:52px;height:52px;border:1px solid var(--oro);
+  background:var(--navy);color:var(--oro-l);font-family:var(--display);font-size:1.6rem;
+  line-height:1;cursor:pointer;transition:.25s;display:grid;place-items:center;
+  box-shadow:0 6px 22px rgba(10,26,51,.28)}
+.frecce button:hover{background:var(--oro);color:var(--navy);border-color:var(--oro)}
+.frecce button:disabled{opacity:.28;cursor:default}
+.frecce .sx{margin-left:-26px}
+.frecce .dx{margin-right:-26px}
+@media(max-width:1240px){.frecce .sx{margin-left:6px}.frecce .dx{margin-right:6px}}
+/* ACQUEFORTI DELLE AREE — sei tavole SVG in 4:3 (area-*.svg), stessa
+   proporzione del riquadro: la tavola si vede sempre intera, senza ritagli.
+   Per cambiare una tavola basta sostituire il file omonimo. Lo script in
+   fondo alla pagina rimuove il riquadro se un file mancasse. */
+.mat-foto{margin:-3rem -2.4rem 1.6rem;aspect-ratio:4/3;overflow:hidden;background:#f6f1e7}
+.mat-foto img{width:100%;height:100%;object-fit:cover;filter:saturate(.82);transition:.35s}
+.mat:hover .mat-foto img{filter:saturate(1)}
+.mat{display:block;background:var(--bianco);padding:3rem 2.4rem;position:relative;transition:.35s}
+.mat .piu{display:inline-block;margin-top:1rem;font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--oro-s);transition:.3s}
+.mat:hover .piu{color:var(--oro-l)}
+.mat:hover{background:var(--navy);color:var(--avorio)}
+.mat .indice{font-family:var(--display);font-size:2rem;color:var(--filo);display:block;margin-bottom:1rem;line-height:1;transition:.35s}
+.mat:hover .indice{color:var(--oro)}
+.mat h3{font-family:var(--display);font-weight:400;font-size:1.42rem;color:var(--navy);line-height:1.22;margin-bottom:.8rem;transition:.35s}
+.mat:hover h3{color:var(--oro-l)}
+.mat p{font-size:.9rem;line-height:1.65;color:var(--tenue);transition:.3s}
+.mat:hover p{color:rgba(243,239,232,.72)}
+.mat .riga-oro{position:absolute;left:0;top:0;width:0;height:3px;background:var(--oro);transition:.35s;z-index:2}
+.mat:hover .riga-oro{width:100%}
+
+@media(max-width:1100px){.mat{flex:0 0 calc((100% - 1px)/2)}}
+@media(max-width:760px){
+  /* la tessera non occupa tutto: si vede il bordo della successiva */
+  .mat{flex:0 0 82%}
+  /* frecce più piccole ma PRESENTI anche sul telefono */
+  .frecce button{width:40px;height:40px;font-size:1.25rem}
+  .frecce .sx{margin-left:4px}.frecce .dx{margin-right:4px}
+  .scorri-info{gap:.8rem;flex-wrap:wrap}
+  .scorri-info span{font-size:.62rem;letter-spacing:.18em}
+}
+
+/* ---------- banda consulenza ---------- */
+.banda{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-3) 100%);color:var(--avorio);position:relative;overflow:hidden}
+.banda::before{content:"";position:absolute;right:-140px;top:-140px;width:520px;height:520px;border:1px solid var(--filo-scuro);border-radius:50%}
+.banda::after{content:"";position:absolute;right:-60px;top:-60px;width:520px;height:520px;border:1px solid rgba(212,180,121,.14);border-radius:50%}
+.banda .wrap{position:relative;z-index:2;max-width:880px;padding-top:96px;padding-bottom:96px}
+.banda h2{font-family:var(--display);font-weight:400;font-size:clamp(1.9rem,4vw,2.8rem);line-height:1.12;margin-bottom:1.2rem}
+.banda .occhiello span{color:var(--oro-l)}
+.banda p{color:rgba(243,239,232,.75);font-size:.98rem;margin-bottom:1rem}
+.passi{margin-top:1.6rem;display:grid;gap:1.1rem}
+.passo{display:flex;gap:1.1rem;align-items:baseline}
+.passo i{font-style:normal;font-family:var(--display);font-size:1.15rem;color:var(--oro-l);min-width:1.6rem}
+.passo div b{display:block;font-size:.95rem;color:var(--avorio)}
+.passo div span{font-size:.87rem;color:rgba(243,239,232,.62)}
+.banda .chiusa{margin-top:1.6rem;padding-top:1.3rem;border-top:1px solid var(--filo-scuro);
+  font-size:.92rem;color:rgba(243,239,232,.68)}
+.banda .chiusa a{color:var(--oro-l);border-bottom:1px solid rgba(212,180,121,.45)}
+.banda .chiusa a:hover{color:var(--avorio);border-bottom-color:var(--avorio)}
+
+
+/* ---------- profilo ---------- */
+.prof{display:grid;grid-template-columns:minmax(0,290px) 1fr;gap:3.4rem;align-items:center}
+/* Cornice del ritratto: un solo filo d'oro, staccato tutt'intorno alla stessa
+   distanza. Prima erano tre linee sovrapposte e sbilanciate verso destra. */
+.cornice{position:relative;padding:16px}
+.cornice::after{content:"";position:absolute;inset:0;border:1px solid rgba(185,147,84,.55);z-index:0;pointer-events:none}
+.cornice .foto{
+  position:relative;z-index:1;aspect-ratio:4/5;background:var(--carta);
+  display:grid;place-items:center;overflow:hidden
+}
+/* Il riquadro del Profilo contiene la scheda dei dati d'albo (il ritratto
+   è in copertina dal 18 ago. 2026). */
+.albo{width:100%;height:100%;background:linear-gradient(168deg,var(--navy-2),var(--navy));
+  display:flex;flex-direction:column;justify-content:center;gap:1.2rem;padding:2rem;text-align:center}
+.albo .lq{font-family:var(--display);font-size:2.4rem;color:var(--oro-l);line-height:1}
+.albo ul{margin:0}
+.albo li{font-size:.86rem;color:rgba(243,239,232,.82);margin:.85rem 0;line-height:1.5}
+.albo li b{display:block;font-size:.6rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--oro-l);margin-bottom:.15rem}
+.prof-txt p{color:var(--tenue);font-size:.99rem;margin-bottom:1rem}
+.prof-txt .apertura{font-family:var(--display);font-size:1.3rem;line-height:1.5;color:var(--navy)}
+/* Bottone su fondo chiaro (rimando alla pagina Profilo). */
+.bott.scuro{border-color:var(--navy);color:var(--navy)}
+.bott.scuro:hover{background:var(--navy);color:var(--avorio)}
+@media(max-width:880px){.prof{grid-template-columns:1fr;gap:2.6rem}.cornice{max-width:290px;margin:0 auto}}
+
+/* ---------- contatti ---------- */
+.cont{background:var(--navy);color:var(--avorio)}
+.cont .wrap{padding-top:44px;padding-bottom:44px}
+.cont h2{font-family:var(--display);font-weight:400;font-size:clamp(1.35rem,2.4vw,1.7rem);margin-bottom:.7rem}
+.cont dl{line-height:1.2;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:.7rem 2rem}
+.cont dt{font-size:.56rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--oro-l)}
+.cont dd{font-size:.88rem;color:rgba(243,239,232,.85);margin-top:.05rem;word-break:break-word}
+.cont dd a{border-bottom:1px solid rgba(212,180,121,.35)}
+.cont dd a:hover{color:var(--oro-l)}
+
+/* ---------- piede ---------- */
+footer{background:#0a111b;color:rgba(243,239,232,.5);padding:2.6rem 0 5.6rem;font-size:.78rem;line-height:1.8;border-top:1px solid var(--filo-scuro)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:1rem 2.4rem;align-items:center;justify-content:space-between}
+footer a{color:rgba(243,239,232,.75);border-bottom:1px solid rgba(243,239,232,.2)}
+footer a:hover{color:var(--oro-l)}
+@media(min-width:761px){footer{padding-bottom:2.6rem}}
+
+/* ---------- barra telefono ---------- */
+.mbar{position:fixed;inset:auto 0 0;z-index:1200;display:none;gap:1px;background:rgba(243,239,232,.18)}
+.mbar a{flex:1;text-align:center;font-weight:700;font-size:.95rem;letter-spacing:.02em;padding:1.15rem .5rem;background:var(--navy);color:var(--avorio)}
+.mbar a.o{background:var(--oro);color:var(--navy)}
+@media(max-width:760px){.mbar{display:flex}}
+
+/* ---------- comparsa ---------- */
+.su{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.su.visto{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.su{opacity:1;transform:none;transition:none}}
+
+/* MODULO DI CONTATTO */
+.modulo{margin-top:2rem;text-align:left}
+.modulo .riga2{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.modulo label{display:block;font-size:.78rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:rgba(243,239,232,.7);margin-bottom:1rem}
+.modulo label .fac{text-transform:none;letter-spacing:0;font-weight:400;opacity:.7}
+.modulo input,.modulo select,.modulo textarea{display:block;width:100%;margin-top:.45rem;padding:.8rem .9rem;font:inherit;font-size:.95rem;color:var(--avorio);background:rgba(255,255,255,.06);border:1px solid rgba(243,239,232,.28);border-radius:0}
+.modulo select option{color:var(--navy)}
+.modulo input:focus,.modulo select:focus,.modulo textarea:focus{outline:none;border-color:var(--oro)}
+.modulo .consenso{display:flex;gap:.7rem;align-items:flex-start;text-transform:none;letter-spacing:0;font-weight:400;font-size:.85rem;line-height:1.5}
+.modulo .consenso input{width:auto;margin:.2rem 0 0}
+.modulo .consenso a{color:var(--oro-l);border-bottom:1px solid rgba(212,180,121,.45)}
+.modulo button{cursor:pointer;font-family:inherit}
+.modulo .nascosto{position:absolute;left:-9999px}
+.nota-modulo{font-size:.78rem;color:rgba(243,239,232,.55);margin-top:1.2rem}
+@media(max-width:640px){.modulo .riga2{grid-template-columns:1fr}}
+.maps{display:inline-block;margin-top:.35rem;font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--oro-s)}
+.banda .rimando{display:inline-block;margin-top:.5rem;color:var(--oro-l);font-weight:600;letter-spacing:.06em;text-transform:uppercase;font-size:.78rem;border-bottom:1px solid rgba(212,180,121,.5)}
+.banda .rimando:hover{color:var(--avorio);border-bottom-color:var(--avorio)}
+</style>
+</head>
+<body>
+
+<a class="skip" href="#inizio">Salta al contenuto</a>
+
+<style>
+/* FASCIA DI TESTA — recapiti sempre in vista, sopra la barra del menu.
+   Scorre via con la pagina: la barra fissa resta quella del menu. */
+.barra-alta{background:#06111f;color:rgba(243,239,232,.62);font-size:.76rem;
+  border-bottom:1px solid rgba(212,180,121,.16)}
+.barra-alta .wrap{display:flex;align-items:center;justify-content:space-between;
+  gap:1.4rem;padding-top:.55rem;padding-bottom:.55rem;flex-wrap:wrap}
+.barra-alta .rec{display:flex;gap:1.6rem;flex-wrap:wrap;align-items:center}
+.barra-alta a{color:rgba(243,239,232,.72);transition:.25s}
+.barra-alta a:hover{color:var(--oro-l)}
+.barra-alta .sep{color:rgba(212,180,121,.45)}
+@media(max-width:760px){.barra-alta .indirizzo{display:none}
+  .barra-alta .wrap{justify-content:center;gap:1rem}}
+</style>
+
+<div class="barra-alta">
+  <div class="wrap">
+    <div class="rec">
+      <span class="indirizzo">Via G. D'Annunzio 12 — 64100 Teramo</span>
+      <a href="tel:+3908611886417">0861 1886417</a>
+      <a href="mailto:info@avvocatolucaquartapelle.com">info@avvocatolucaquartapelle.com</a>
+    </div>
+    <div class="rec">
+      <a href="en/profile.html" hreflang="en" lang="en">English</a>
+    </div>
+  </div>
+</div>
+
+<header id="top">
+  <div class="wrap">
+    <!-- LOGO — è la versione in chiaro del Suo marchio (L e Q intrecciate).
+         L'originale in nero su bianco è nel file logo.jpg, per stampa e profili. -->
+    <a class="marchio" href="#hero" aria-label="Luca Quartapelle — Avvocato">
+      <svg viewBox="0 0 300 124" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Luca Quartapelle, Avvocato">
+        <g fill="#f3efe8" font-family="Georgia,'Times New Roman',serif">
+          <text x="0"  y="58"  font-size="68">L</text>
+          <text x="44" y="46"  font-size="31" textLength="76"  lengthAdjust="spacingAndGlyphs">UCA</text>
+          <text x="22" y="110" font-size="68">Q</text>
+          <text x="70" y="96"  font-size="31" textLength="222" lengthAdjust="spacingAndGlyphs">UARTAPELLE</text>
+          <text x="292" y="122" font-size="15" letter-spacing="4" text-anchor="end">AVVOCATO</text>
+        </g>
+        <line x1="70" y1="104" x2="292" y2="104" stroke="#b99354" stroke-width="2"/>
+      </svg>
+    </a>
+    <nav class="menu" aria-label="Menu principale">
+      <a href="#materie">Aree di attività</a>
+      <a href="profilo.html">Profilo</a>
+      <a href="#contatti">Contatti</a>
+      <a class="tel-btn" href="tel:+3908611886417">0861 1886417</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inizio">
+
+<!-- ================= COPERTINA ================= -->
+<section id="hero">
+  <!-- SFONDO DI COPERTINA — colonnato di palazzo di giustizia, file locale
+       (sfondo-copertina.jpg, già tagliato in formato panoramico). Fotografia di
+       Adrien Delforge, Unsplash License. -->
+  <div class="scena" aria-hidden="true">
+    <img src="sfondo-copertina.jpg" alt="" onerror="this.remove()">
+  </div>
+  <div class="velo" aria-hidden="true"></div>
+
+  <div class="wrap">
+    <div class="hero-c">
+      <div class="hero-pre"><span class="filo-oro"></span><span>Studio Legale &middot; Foro di Teramo</span></div>
+      <h1><span class="hero-titolo-pre">Avvocato</span>Luca Quartapelle</h1>
+      <div class="hero-riga" aria-hidden="true"></div>
+      <p class="hero-sub">Diritto penale, diritto civile e risarcimento del danno, sinistri stradali, famiglia e persona, immigrazione, tutela del consumatore.<br><span class="hero-remoto">In studio a Teramo e, anche da remoto, in tutta Italia.</span></p>
+      <div class="hero-az">
+        <a class="bott oro" href="#assistenza">Rappresentare il caso</a>
+        <a class="bott linea" href="tel:+3908611886417">0861 1886417</a>
+      </div>
+    </div>
+  </div>
+  <div class="giu-freccia" aria-hidden="true"></div>
+</section>
+
+<!-- ================= TRE TESSERE DI ACCESSO ================= -->
+<div class="tessere">
+  <div class="wrap">
+    <a class="tess su" href="#materie">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v17M6.5 21h11M3.5 8h17M3.5 8l-2.5 5.5a2.9 2.9 0 0 0 5 0zM20.5 8L18 13.5a2.9 2.9 0 0 0 5 0zM12 4.6a1 1 0 1 0 0-.1"/></svg>
+      <b>Aree di attività</b>
+      <em>&rarr;</em>
+    </a>
+    <a class="tess su" href="profilo.html">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="7.8" r="3.4"/><path d="M5.4 20.2c.8-4.1 3.3-6.2 6.6-6.2s5.8 2.1 6.6 6.2"/></svg>
+      <b>Profilo</b>
+      <em>&rarr;</em>
+    </a>
+    <a class="tess su" href="#contatti">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.6" y="5" width="18.8" height="14" rx="1.4"/><path d="M2.6 7.2 12 13.4l9.4-6.2"/></svg>
+      <b>Contatti</b>
+      <em>&rarr;</em>
+    </a>
+  </div>
+</div>
+
+<!-- ================= MATERIE ================= -->
+<section id="materie" class="sez chiara">
+  <div class="wrap">
+    <div class="testata centro su" style="margin-bottom:3rem">
+      <div class="occhiello"><span class="filo-oro"></span><span>Aree di attività</span><span class="filo-oro"></span></div>
+      <p>Lo Studio assiste persone e imprese, in sede giudiziale e stragiudiziale. Il colloquio si svolge su appuntamento, anche in videoconferenza.</p>
+    </div>
+    <div class="carosello su">
+      <div class="griglia-m" id="materieScorri">
+      <a class="mat" href="diritto-penale.html"><span class="riga-oro"></span>
+        <figure class="mat-foto"><img src="area-penale.svg" alt="" loading="lazy"></figure>
+        <span class="indice">I.</span>
+        <h3>Diritto penale</h3>
+        <p>Difesa dell'indagato e dell'imputato in ogni fase, dalla prima notifica all'esecuzione della pena; assistenza alla persona offesa nella querela e come parte civile.</p>
+        <span class="piu">Approfondisci &rarr;</span>
+      </a>
+      <a class="mat" href="diritto-civile.html"><span class="riga-oro"></span>
+        <figure class="mat-foto"><img src="area-civile.svg" alt="" loading="lazy"></figure>
+        <span class="indice">II.</span>
+        <h3>Diritto civile e risarcimento del danno</h3>
+        <p>Contratti, recupero crediti, sfratti, liti condominiali e risarcimento del danno: dalla diffida al giudizio, fino all'esecuzione forzata se il debitore non adempie.</p>
+        <span class="piu">Approfondisci &rarr;</span>
+      </a>
+      <a class="mat" href="sinistri-stradali.html"><span class="riga-oro"></span>
+        <figure class="mat-foto"><img src="area-sinistri.svg" alt="" loading="lazy"></figure>
+        <span class="indice">III.</span>
+        <h3>Sinistri stradali</h3>
+        <p>Risarcimento delle lesioni e dei danni al veicolo: la richiesta all'assicuratore, la trattativa e, se l'offerta non è congrua, il giudizio. Particolare attenzione ai sinistri gravi o mortali.</p>
+        <span class="piu">Approfondisci &rarr;</span>
+      </a>
+      <a class="mat" href="diritto-famiglia.html"><span class="riga-oro"></span>
+        <figure class="mat-foto"><img src="area-famiglia.svg" alt="" loading="lazy"></figure>
+        <span class="indice">IV.</span>
+        <h3>Diritto di famiglia e della persona</h3>
+        <p>Separazione e divorzio, affidamento e mantenimento dei figli, fine di una convivenza; amministrazione di sostegno e tutele per le persone fragili e i loro familiari.</p>
+        <span class="piu">Approfondisci &rarr;</span>
+      </a>
+      <a class="mat" href="diritto-immigrazione.html"><span class="riga-oro"></span>
+        <figure class="mat-foto"><img src="area-immigrazione.svg" alt="" loading="lazy"></figure>
+        <span class="indice">V.</span>
+        <h3>Diritto dell'immigrazione</h3>
+        <p>Permessi di soggiorno, ricongiungimento familiare, cittadinanza: la pratica davanti a Questura e Prefettura e, in caso di diniego, il ricorso al giudice.</p>
+        <span class="piu">Approfondisci &rarr;</span>
+      </a>
+      <a class="mat" href="esecuzioni-opposizioni.html"><span class="riga-oro"></span>
+        <figure class="mat-foto"><img src="area-esecuzioni.svg" alt="" loading="lazy"></figure>
+        <span class="indice">VI.</span>
+        <h3>Esecuzioni e opposizioni</h3>
+        <p>Il titolo ottenuto va fatto valere: precetto, pignoramento di stipendi, conti e immobili, fino all'assegnazione. E per chi l'esecuzione la subisce: opposizioni all'esecuzione e agli atti, riduzione e conversione del pignoramento.</p>
+        <span class="piu">Approfondisci &rarr;</span>
+      </a>
+      <a class="mat" href="diritto-consumatore.html"><span class="riga-oro"></span>
+        <figure class="mat-foto"><img src="area-consumatore.svg" alt="" loading="lazy"></figure>
+        <span class="indice">VII.</span>
+        <h3>Diritto del consumatore</h3>
+        <p>Un acquisto difettoso, un servizio non conforme, una clausola squilibrata, un addebito mai richiesto: garanzia legale di due anni, recesso nei contratti a distanza, nullità delle clausole vessatorie. E il giudizio si tiene davanti al giudice del luogo di residenza del consumatore.</p>
+        <span class="piu">Approfondisci &rarr;</span>
+      </a>
+      </div>
+      <div class="frecce" aria-hidden="true">
+        <button class="sx" type="button" aria-label="Materie precedenti">&#8249;</button>
+        <button class="dx" type="button" aria-label="Materie successive">&#8250;</button>
+      </div>
+    </div>
+    <div class="scorri-info">
+      <span>Scorrere per tutte le materie</span>
+      <div class="pallini" id="pallini" aria-hidden="true"></div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ================= PROFILO ================= -->
+<section id="profilo" class="sez">
+  <div class="wrap">
+    <div class="prof">
+      <div class="cornice su">
+        <div class="foto">
+          <!-- RITRATTO (provvisorio, in attesa della fotografia professionale). -->
+          <img src="ritratto.jpeg" alt="Avv. Luca Quartapelle" style="width:100%;height:100%;object-fit:cover;object-position:50% 18%;display:block">
+        </div>
+      </div>
+      <div class="prof-txt su">
+        <div class="occhiello"><span class="filo-oro"></span><span>Profilo</span></div>
+        <p class="apertura">Offro consulenza e assistenza, giudiziale e stragiudiziale, nelle materie civili e nella difesa penale.</p>
+        <p style="margin-top:1.2rem">Iscritto all'Albo dell'Ordine degli Avvocati di Teramo e negli elenchi per il patrocinio a spese dello Stato, settore civile e penale. Il deposito telematico degli atti consente la trattazione da remoto anche fuori distretto; ricevo su appuntamento, anche in videoconferenza.</p>
+        <a class="bott scuro" style="margin-top:.6rem" href="profilo.html">Il profilo dello Studio</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTATTARE LO STUDIO ================= -->
+<!-- Fascia di invito al contatto (ispirata alla chiusa "richiedi una
+     consulenza" dei siti forensi). Il pulsante è all'infinito, come
+     prescrive il §4 n. 1 del LEGGIMI: niente imperativi. -->
+<section id="assistenza" class="banda">
+  <div class="wrap su">
+    <div class="occhiello"><span class="filo-oro"></span><span>Assistenza legale</span></div>
+    <h2>Occorre assistenza legale?</h2>
+    <p>Una telefonata o una email bastano per rappresentare il caso allo Studio: l'esame preliminare non comporta oneri e non impegna, e serve a chiarire subito prospettive e termini che corrono. L'incarico può essere conferito anche a distanza; il colloquio può svolgersi in videoconferenza.</p>
+    <form class="modulo" name="contatto" method="POST" action="/grazie.html" data-netlify="true" netlify-honeypot="sito-web">
+      <input type="hidden" name="form-name" value="contatto">
+      <p class="nascosto"><label>Non compilare: <input name="sito-web" tabindex="-1" autocomplete="off"></label></p>
+      <div class="riga2">
+        <label>Nome e cognome<input type="text" name="nome" required autocomplete="name"></label>
+        <label>Email<input type="email" name="email" required autocomplete="email"></label>
+      </div>
+      <div class="riga2">
+        <label>Telefono <span class="fac">(facoltativo)</span><input type="tel" name="telefono" autocomplete="tel"></label>
+        <label>Materia
+          <select name="materia">
+            <option value="">— scegliere —</option>
+            <option>Diritto penale</option>
+            <option>Diritto civile e risarcimenti</option>
+            <option>Sinistri stradali</option>
+            <option>Famiglia e persona</option>
+            <option>Immigrazione</option>
+            <option>Esecuzioni e opposizioni</option>
+            <option>Altro</option>
+          </select>
+        </label>
+      </div>
+      <label>Descrizione sintetica del caso<textarea name="messaggio" rows="5" required></textarea></label>
+      <label class="consenso"><input type="checkbox" name="privacy" required> Dichiaro di aver letto l'<a href="note-legali.html">informativa privacy</a> relativa al trattamento dei dati conferiti per il riscontro della richiesta.</label>
+      <div class="hero-az" style="margin-top:1.4rem">
+        <button class="bott oro" type="submit">Inviare allo Studio</button>
+        <a class="bott linea" href="tel:+3908611886417">0861 1886417</a>
+      </div>
+      <p class="nota-modulo">L'invio del modulo non costituisce conferimento di incarico e non interrompe né sospende i termini di legge. Per urgenze, telefonare.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ================= CONTATTI ================= -->
+<section id="contatti" class="cont">
+  <div class="wrap">
+    <div class="su">
+      <div class="occhiello"><span class="filo-oro"></span><span style="color:var(--oro-l)">Contatti</span></div>
+      <h2>Studio legale in Teramo</h2>
+      <dl>
+        <div><dt>Indirizzo</dt><dd>Via G. D'Annunzio 12 — 64100 Teramo<br><a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=Via+G.+D%27Annunzio+12%2C+64100+Teramo" target="_blank" rel="noopener">Apri in Google Maps &rarr;</a></dd></div>
+        <div><dt>Telefono</dt><dd><a href="tel:+3908611886417">0861 1886417</a></dd></div>
+        <div><dt>Email</dt><dd><a href="mailto:info@avvocatolucaquartapelle.com">info@avvocatolucaquartapelle.com</a></dd></div>
+        <div><dt>PEC</dt><dd><a href="mailto:luca.quartapelle@pec-avvocatiteramo.it">luca.quartapelle@pec-avvocatiteramo.it</a></dd></div>
+        <div><dt>Ricevimento</dt><dd>Su appuntamento, anche in videoconferenza</dd></div>
+        <div></div>
+      </dl>
+      <!-- PULSANTE «MI PIACE» DELLA PAGINA FACEBOOK — contenuto di terzi:
+           viene caricato SOLO dopo il consenso (meccanismo di consenso.js);
+           prima del consenso compare il riquadro di cortesia con la scelta.
+           Il dominio facebook.com è ammesso in frame-src nel file _headers. -->
+      <div style="max-width:420px">
+        <div data-terzi
+             data-fonte="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Favvocatoquartapelle%2F&amp;width=300&amp;layout=button_count&amp;action=like&amp;size=large&amp;share=false&amp;locale=it_IT"
+             data-titolo="Pulsante «Mi piace» della pagina Facebook dello Studio"
+             data-alto="70"
+             data-pagina="https://www.facebook.com/avvocatoquartapelle"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<style>
+/* PIÈ DI PAGINA ESTESO — quattro colonne e una fascia conclusiva con i dati
+   d'albo e il disclaimer, come si usa nei siti forensi. Lo stile sta qui e non
+   nel foglio in testa alla pagina per tenere insieme marcatura e regole. */
+footer .wrap{display:block}
+footer .colonne{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:2.4rem;
+  align-items:start;text-align:left}
+footer .colonne h3{font-family:var(--sans);font-size:.68rem;font-weight:700;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--oro-l);margin:0 0 .9rem}
+footer .colonne p{margin:0 0 .5rem}
+footer .colonne ul{list-style:none;margin:0;padding:0}
+footer .colonne li{margin-bottom:.45rem}
+footer .colonne a{border-bottom:0}
+footer .colonne a:hover{border-bottom:1px solid rgba(243,239,232,.35)}
+footer .chiusa{border-top:1px solid rgba(243,239,232,.12);margin-top:2.4rem;padding-top:1.6rem;
+  display:block;text-align:left}
+footer .chiusa p{margin:0 0 .5rem;font-size:.74rem;color:rgba(243,239,232,.42);max-width:none}
+footer .chiusa .disclaimer{font-style:italic}
+@media(max-width:900px){footer .colonne{grid-template-columns:1fr 1fr;gap:1.8rem}}
+@media(max-width:560px){footer .colonne{grid-template-columns:1fr;gap:1.6rem}}
+</style>
+
+<footer>
+  <div class="wrap">
+    <div class="colonne">
+
+      <div>
+        <h3>Studio</h3>
+        <p>Avv. Luca Quartapelle</p>
+        <p>Via G. D'Annunzio 12<br>64100 Teramo</p>
+        <p>P. IVA 01950940674</p>
+      </div>
+
+      <div>
+        <h3>Contatti</h3>
+        <ul>
+          <li><a href="tel:+3908611886417">0861 1886417</a></li>
+          <li><a href="mailto:info@avvocatolucaquartapelle.com">info@avvocatolucaquartapelle.com</a></li>
+          <li><a href="mailto:luca.quartapelle@pec-avvocatiteramo.it">PEC</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Aree di attività</h3>
+        <ul>
+          <li><a href="sinistri-stradali.html">Sinistri stradali</a></li>
+          <li><a href="diritto-penale.html">Diritto penale</a></li>
+          <li><a href="diritto-civile.html">Diritto civile</a></li>
+          <li><a href="diritto-famiglia.html">Famiglia e persona</a></li>
+          <li><a href="diritto-immigrazione.html">Immigrazione</a></li>
+          <li><a href="esecuzioni-opposizioni.html">Esecuzioni e opposizioni</a></li>
+          <li><a href="diritto-consumatore.html">Diritto del consumatore</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Informazioni</h3>
+        <ul>
+          <li><a href="profilo.html">Profilo</a></li>
+          <li><a href="index.html#contatti">Contatti</a></li>
+          <li><a href="en/profile.html" hreflang="en" lang="en">English</a></li>
+          <li><a href="note-legali.html">Note legali e privacy</a></li>
+          <li><a href="cookie-policy.html">Cookie policy</a></li>
+          <li><a href="#" data-ck="preferenze">Preferenze cookie</a></li>
+          <li><a href="https://www.facebook.com/avvocatoquartapelle" target="_blank" rel="noopener">Facebook</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="chiusa">
+      <p>Iscritto all'Albo dell'Ordine degli Avvocati di Teramo · Elenchi del patrocinio a spese dello Stato, settore civile e penale · Polizza per la responsabilità civile professionale ex art. 12 l. n. 247/2012</p>
+      <p class="disclaimer">I contenuti di questo sito hanno carattere informativo e non costituiscono parere professionale. Nessun rapporto professionale si costituisce in difetto di conferimento scritto dell'incarico.</p>
+      <p>Questo sito non utilizza cookie di profilazione; gli accessi sono misurati in forma anonima, senza cookie. <a href="#" data-ck="preferenze" style="color:rgba(243,239,232,.55);text-decoration:underline">Preferenze</a></p>
+      <p>&copy; 2026 Avv. Luca Quartapelle</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Barra rapida a DUE pulsanti (WhatsApp rimosso il 23 ago. 2026 su ordine
+     del titolare: il distintivo "Powered by Netlify" copriva il terzo). -->
+<nav class="mbar" aria-label="Azioni rapide">
+  <a href="tel:+3908611886417">Telefonare</a>
+  <a class="o" href="#assistenza">Scrivere</a>
+</nav>
+
+<script>
+/* Barra che si compatta allo scorrimento + comparsa dolce. Nessun dato raccolto. */
+(function(){
+  var top=document.getElementById('top');
+  var fascia=document.querySelector('.barra-alta');
+  /* La barra del menu si tiene sotto la fascia dei recapiti finché questa è
+     in vista; quando la fascia scorre via, la barra si aggancia in cima. */
+  function posiziona(){
+    var giu=scrollY>40;
+    top.classList.toggle('giu',giu);
+    var b=fascia?fascia.getBoundingClientRect().bottom:0;
+    top.style.top=(b>0?b:0)+'px';
+  }
+  addEventListener('scroll',posiziona,{passive:true});
+  addEventListener('resize',posiziona);
+  posiziona();
+  var els=document.querySelectorAll('.su');
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches||!('IntersectionObserver'in window)){
+    els.forEach(function(e){e.classList.add('visto')});return;
+  }
+  var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('visto');io.unobserve(x.target)}})},{rootMargin:'0px 0px -10% 0px',threshold:.05});
+  els.forEach(function(e){io.observe(e)});
+})();
+/* FOTOGRAFIE DELLE AREE — se un file immagine non è (ancora) nella cartella,
+   il riquadro viene rimosso e la tessera resta pulita, senza icona rotta. */
+(function(){
+  document.querySelectorAll('.mat-foto img, .scena img').forEach(function(im){
+    function via(){var f=im.closest('.mat-foto');(f||im).remove()}
+    if(im.complete&&im.naturalWidth===0){via()}else{im.addEventListener('error',via)}
+  });
+})();
+</script>
+
+<!-- AVVISO SUI COOKIE — marcatura e stile in chiaro: l'avviso compare anche
+     se consenso.js non venisse caricato. Il comportamento (memoria della
+     scelta, finestra delle preferenze, blocco dei contenuti di terzi) è in
+     consenso.js, le cui istruzioni d'uso stanno in testa a quel file. -->
+<div id="ck-avviso" hidden></div>
+<script src="consenso.js" defer></script>
+<!-- STATISTICHE SENZA COOKIE — GoatCounter. Conta le visite senza cookie né
+     identificatori: non richiede consenso. Perché funzioni occorre
+     registrare (gratis) su goatcounter.com il codice: avvocatolucaquartapelle -->
+<script data-goatcounter="https://avvocatolucaquartapelle.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+
+<script>
+/* Carosello delle materie: frecce, rotellina orizzontale, scorrimento col dito. */
+(function(){
+  var n=document.getElementById('materieScorri'); if(!n) return;
+  var sx=document.querySelector('.frecce .sx'), dx=document.querySelector('.frecce .dx');
+  function passo(){ var t=n.querySelector('.mat'); return t?t.getBoundingClientRect().width+1:320; }
+  function stato(){
+    if(!sx||!dx) return;
+    sx.disabled = n.scrollLeft<8;
+    dx.disabled = n.scrollLeft >= n.scrollWidth-n.clientWidth-8;
+  }
+  if(sx) sx.addEventListener('click',function(){n.scrollBy({left:-passo(),behavior:'smooth'})});
+  if(dx) dx.addEventListener('click',function(){n.scrollBy({left: passo(),behavior:'smooth'})});
+  var cor=n.closest('.carosello'), pal=document.getElementById('pallini');
+  var tess=n.querySelectorAll('.mat');
+  if(pal){ tess.forEach(function(){pal.appendChild(document.createElement('i'))}); }
+  function stato2(){
+    if(cor){
+      cor.classList.toggle('a-inizio', n.scrollLeft<8);
+      cor.classList.toggle('a-fine', n.scrollLeft >= n.scrollWidth-n.clientWidth-8);
+    }
+    if(pal){
+      var k=Math.round(n.scrollLeft/passo());
+      pal.querySelectorAll('i').forEach(function(p,j){p.classList.toggle('qui',j===k)});
+    }
+  }
+  n.addEventListener('scroll',function(){stato();stato2()},{passive:true});
+  addEventListener('resize',function(){stato();stato2()}); stato(); stato2();
+})();
+</script>
+</body>
+</html>
