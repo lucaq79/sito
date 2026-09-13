@@ -241,7 +241,15 @@ section[id],div[id]{scroll-margin-top:104px}
 .mat:hover .riga-oro{width:100%}
 
 @media(max-width:1100px){.mat{flex:0 0 calc((100% - 1px)/2)}}
-@media(max-width:760px){.mat{flex:0 0 88%}.frecce{display:none}}
+@media(max-width:760px){
+  /* la tessera non occupa tutto: si vede il bordo della successiva */
+  .mat{flex:0 0 82%}
+  /* frecce più piccole ma PRESENTI anche sul telefono */
+  .frecce button{width:40px;height:40px;font-size:1.25rem}
+  .frecce .sx{margin-left:4px}.frecce .dx{margin-right:4px}
+  .scorri-info{gap:.8rem;flex-wrap:wrap}
+  .scorri-info span{font-size:.62rem;letter-spacing:.18em}
+}
 
 /* ---------- banda consulenza ---------- */
 .banda{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-3) 100%);color:var(--avorio);position:relative;overflow:hidden}
@@ -298,7 +306,7 @@ section[id],div[id]{scroll-margin-top:104px}
 .cont dd a:hover{color:var(--oro-l)}
 
 /* ---------- piede ---------- */
-footer{background:#0a111b;color:rgba(243,239,232,.5);padding:2.6rem 0 10.8rem;font-size:.78rem;line-height:1.8;border-top:1px solid var(--filo-scuro)}
+footer{background:#0a111b;color:rgba(243,239,232,.5);padding:2.6rem 0 4rem;font-size:.78rem;line-height:1.8;border-top:1px solid var(--filo-scuro)}
 footer .wrap{display:flex;flex-wrap:wrap;gap:1rem 2.4rem;align-items:center;justify-content:space-between}
 footer a{color:rgba(243,239,232,.75);border-bottom:1px solid rgba(243,239,232,.2)}
 footer a:hover{color:var(--oro-l)}
@@ -306,7 +314,7 @@ footer a:hover{color:var(--oro-l)}
 
 /* ---------- barra telefono ---------- */
 .mbar{position:fixed;inset:auto 0 0;z-index:1200;display:none;gap:1px;background:rgba(243,239,232,.18)}
-.mbar a{flex:1;text-align:center;font-weight:700;font-size:.9rem;padding:1.05rem .5rem 4.4rem;background:var(--navy);color:var(--avorio)}
+.mbar a{flex:1;text-align:center;font-weight:700;font-size:.88rem;letter-spacing:.02em;padding:.8rem .5rem;line-height:1.2;background:var(--navy);color:var(--avorio)}
 .mbar a.o{background:var(--oro);color:var(--navy)}
 @media(max-width:760px){.mbar{display:flex}}
 
@@ -335,7 +343,7 @@ footer a:hover{color:var(--oro-l)}
 .banda .rimando:hover{color:var(--avorio);border-bottom-color:var(--avorio)}
 </style>
 </head>
-<body>
+<body data-versione="v20">
 
 <a class="skip" href="#inizio">Salta al contenuto</a>
 
