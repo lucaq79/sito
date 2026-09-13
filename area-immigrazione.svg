@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+<defs>
+<linearGradient id="carta" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#fdfbf7"/><stop offset="0.55" stop-color="#f6f1e7"/><stop offset="1" stop-color="#efe8da"/>
+</linearGradient>
+<radialGradient id="alone" cx="0.5" cy="0.44" r="0.6">
+<stop offset="0" stop-color="#b99354" stop-opacity="0.18"/>
+<stop offset="0.55" stop-color="#b99354" stop-opacity="0.06"/>
+<stop offset="1" stop-color="#b99354" stop-opacity="0"/>
+</radialGradient>
+<pattern id="trat" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+<line x1="0" y1="0" x2="0" y2="6" stroke="#8f6f3c" stroke-width="0.5" opacity="0.12"/>
+</pattern>
+</defs>
+<rect width="800" height="600" fill="url(#carta)"/>
+<rect width="800" height="600" fill="url(#alone)"/>
+
+<circle cx="400" cy="850" r="470" fill="#e4dac4" stroke="#8f6f3c" stroke-width="2"/>
+<circle cx="400" cy="850" r="470" fill="url(#trat)"/>
+<g fill="none" stroke="#8f6f3c" stroke-width="1" opacity="0.6">
+<ellipse cx="400" cy="850" rx="320" ry="468"/>
+<ellipse cx="400" cy="850" rx="150" ry="469"/>
+<path d="M-32 700 Q 400 618 832 700"/>
+<path d="M56 560 Q 400 494 744 560"/>
+</g>
+<g fill="none" stroke="#b08d4e" stroke-width="2.6" stroke-dasharray="2 12" stroke-linecap="round">
+<path d="M138 430 Q 400 150 662 362"/>
+</g>
+<circle cx="138" cy="430" r="6" fill="#b08d4e"/>
+<circle cx="662" cy="362" r="9" fill="none" stroke="#b08d4e" stroke-width="2"/><circle cx="662" cy="362" r="3.5" fill="#b08d4e"/>
+<g transform="translate(398,178) rotate(20)" fill="#b08d4e">
+<path d="M0 6 h28 q11 0 15 4 q-4 4 -15 4 h-28 l-13 11 h-6 l6 -13 h-9 l-6 5 h-5 l4 -9 -4 -9 h5 l6 5 h9 l-6 -13 h6 Z"/>
+</g>
+<g fill="none" stroke="#8f6f3c" stroke-width="1.5" opacity="0.85">
+<circle cx="668" cy="112" r="30"/>
+<path d="M668 82 v-11 M668 142 v11 M638 112 h-11 M698 112 h11"/>
+<path d="M668 89 l7 18 -7 5 -7 -5 Z" fill="#b08d4e"/>
+</g>
+<rect x="12" y="12" width="776" height="576" rx="2" fill="none" stroke="#8f6f3c" stroke-width="1.2" opacity="0.35"/></svg>
