@@ -70,7 +70,9 @@ img,svg{display:block;max-width:100%}
 .tel-btn{border:1px solid var(--oro);color:var(--oro-l);font-weight:600;font-size:.82rem;letter-spacing:.05em;padding:.6rem 1.2rem;transition:.25s}
 .tel-btn:hover{background:var(--oro);color:var(--navy)}
 @media(max-width:1040px){.menu a:not(.tel-btn){display:none}}
-.esordio{background:linear-gradient(168deg,rgba(13,33,68,.80) 0%,rgba(10,26,51,.82) 52%,rgba(6,17,31,.88) 100%),url("testata-materie.jpg") center 30%/cover no-repeat;color:var(--avorio);position:relative;overflow:hidden}
+.esordio{background:linear-gradient(168deg,#0d2144 0%,#0a1a33 52%,#061520 100%);color:var(--avorio);position:relative;overflow:hidden}
+/* trama di filetti sottilissimi: profondità senza fotografie */
+.esordio::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.5;background:repeating-linear-gradient(115deg,transparent 0 78px,rgba(212,180,121,.055) 78px 79px);}
 .esordio::before{content:"";position:absolute;right:-120px;top:-160px;width:460px;height:460px;border:1px solid var(--filo-scuro);border-radius:50%}
 .esordio .wrap{position:relative;z-index:2;padding:74px 28px 66px;max-width:940px}
 .occhiello{display:flex;align-items:center;gap:14px;margin-bottom:1.1rem}
@@ -110,6 +112,13 @@ footer a:hover{color:var(--oro-l)}
 .mbar a{flex:1;text-align:center;font-weight:700;font-size:.88rem;letter-spacing:.02em;padding:.8rem .5rem;line-height:1.2;background:var(--navy);color:var(--avorio)}
 .mbar a.o{background:var(--oro);color:var(--navy)}
 @media(max-width:760px){.mbar{display:flex}}
+
+/* blocco di orientamento in testa alla pagina */
+.blocco-urgenza{border-left:3px solid var(--oro);padding-left:1.6rem}
+.passi-urgenza{margin:1.2rem 0 1rem;padding-left:1.3rem;display:grid;gap:.75rem}
+.passi-urgenza li{line-height:1.65}
+.passi-urgenza b{color:var(--navy)}
+@media(max-width:640px){.blocco-urgenza{padding-left:1.1rem}}
 </style>
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Studio legale Quartapelle", "item": "https://avvocatolucaquartapelle.com/"}, {"@type": "ListItem", "position": 2, "name": "Diritto di famiglia e della persona", "item": "https://avvocatolucaquartapelle.com/diritto-famiglia.html"}]}
@@ -155,6 +164,20 @@ footer a:hover{color:var(--oro-l)}
 
 <main id="contenuto">
   <div class="wrap">
+
+    <!-- BLOCCO DI ORIENTAMENTO — la prima cosa che deve trovare chi arriva
+         su questa pagina: che cosa guardare, e in quanto tempo. -->
+    <div class="blocco blocco-urgenza">
+      <h2>Prima di iniziare</h2>
+      <p>Nelle vicende familiari le decisioni prese nelle prime settimane orientano quanto viene dopo, e non tutte sono facilmente reversibili. Vale la pena affrontarle con un quadro chiaro.</p>
+      <ol class="passi-urgenza">
+        <li><b>Raccolga la documentazione economica</b> di entrambi: redditi, spese fisse, mutui, canoni. È la base su cui si determinano mantenimento e assegnazione della casa familiare.</li>
+        <li><b>Distingua ciò che riguarda i figli da ciò che riguarda i coniugi.</b> Le questioni relative ai figli seguono criteri propri e non sono materia di scambio.</li>
+        <li><b>Non modifichi unilateralmente la situazione di fatto</b> — residenza dei figli, utilizzo della casa, prelievi dai conti comuni — senza prima averne valutato le conseguenze.</li>
+        <li><b>Se vi sono condizioni già stabilite da un provvedimento</b> e non vengono rispettate, o se le circostanze sono mutate, esistono strumenti specifici: vanno azionati, non attesi.</li>
+      </ol>
+      <p class="rilievo">Dove l'accordo è possibile costa meno del conflitto e dura più a lungo; dove non lo è, si procede. Ne parliamo prima di qualsiasi iniziativa.</p>
+    </div>
 
     <div class="blocco">
       <h2>Separazione e divorzio</h2>

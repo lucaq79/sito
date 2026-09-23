@@ -70,7 +70,9 @@ img,svg{display:block;max-width:100%}
 .tel-btn{border:1px solid var(--oro);color:var(--oro-l);font-weight:600;font-size:.82rem;letter-spacing:.05em;padding:.6rem 1.2rem;transition:.25s}
 .tel-btn:hover{background:var(--oro);color:var(--navy)}
 @media(max-width:1040px){.menu a:not(.tel-btn){display:none}}
-.esordio{background:linear-gradient(168deg,rgba(13,33,68,.84) 0%,rgba(10,26,51,.86) 52%,rgba(6,17,31,.9) 100%),url("testata-profilo.jpg") center 40%/cover no-repeat;color:var(--avorio);position:relative;overflow:hidden}
+.esordio{background:linear-gradient(168deg,#0d2144 0%,#0a1a33 52%,#061520 100%);color:var(--avorio);position:relative;overflow:hidden}
+/* trama di filetti sottilissimi: profondità senza fotografie */
+.esordio::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.5;background:repeating-linear-gradient(115deg,transparent 0 78px,rgba(212,180,121,.055) 78px 79px);}
 .esordio::before{content:"";position:absolute;right:-120px;top:-160px;width:460px;height:460px;border:1px solid var(--filo-scuro);border-radius:50%}
 .esordio .wrap{position:relative;z-index:2;padding:74px 28px 66px;max-width:940px}
 .occhiello{display:flex;align-items:center;gap:14px;margin-bottom:1.1rem}
@@ -123,6 +125,27 @@ footer a:hover{color:var(--oro-l)}
 .ritratto-pagina{margin:0 0 2.6rem;max-width:280px}
 .ritratto-pagina img{width:100%;height:auto;display:block;border:1px solid rgba(185,147,84,.55);padding:10px;background:var(--carta)}
 @media(max-width:700px){.ritratto-pagina{max-width:210px;margin:0 auto 2.2rem}}
+
+/* ---------- diagramma delle fasi ---------- */
+.fasi{list-style:none;margin:1.8rem 0 1.4rem;padding:0;
+  display:grid;grid-template-columns:repeat(5,1fr);gap:0;counter-reset:none}
+.fase{position:relative;padding:0 1rem 0 0;display:flex;flex-direction:column;gap:.5rem}
+/* connettore: un filo d'oro che unisce i numeri */
+.fase::before{content:"";position:absolute;left:19px;top:19px;right:0;height:1px;background:var(--filo);z-index:0}
+.fase:last-child::before{display:none}
+.fase-n{position:relative;z-index:1;width:38px;height:38px;flex:0 0 38px;
+  display:grid;place-items:center;border:1px solid var(--oro);border-radius:50%;
+  background:var(--carta);font-family:var(--display);font-size:.95rem;color:var(--oro-s)}
+.fase-t{font-family:var(--display);font-size:1.02rem;line-height:1.3;color:var(--navy)}
+.fase-d{font-size:.84rem;line-height:1.55;color:var(--grigio,#5c6470)}
+@media(max-width:900px){
+  .fasi{grid-template-columns:1fr;gap:1.5rem}
+  .fase{flex-direction:row;flex-wrap:wrap;align-items:flex-start;gap:.2rem 1rem;padding:0}
+  /* su schermo stretto il filo diventa verticale */
+  .fase::before{left:19px;top:44px;right:auto;bottom:-1.5rem;width:1px;height:auto}
+  .fase-t{flex:1;padding-top:.5rem}
+  .fase-d{flex-basis:100%;padding-left:calc(38px + 1rem)}
+}
 </style>
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Studio legale Quartapelle", "item": "https://avvocatolucaquartapelle.com/"}, {"@type": "ListItem", "position": 2, "name": "Profilo", "item": "https://avvocatolucaquartapelle.com/profilo.html"}]}
@@ -200,6 +223,44 @@ footer a:hover{color:var(--oro-l)}
       <p>Il compenso lo concordo per iscritto prima di ogni attività, con preventivo redatto ai sensi dell'art. 13 della legge 31 dicembre 2012 n. 247. Dove ne ricorrano i presupposti, verifico l'ammissibilità al patrocinio a spese dello Stato.</p>
       <p class="rilievo">Nessun esito processuale può essere promesso da alcun difensore: l'alea del giudizio non è eliminabile, e va conosciuta prima di decidere se affrontarlo.</p>
     </div>
+
+    <!-- DIAGRAMMA DI PROCESSO — cinque fasi, dalla ricezione dell'atto all'incarico.
+         Nessun servizio di terzi, nessuna immagine: solo marcatura e stile. -->
+    <div class="blocco">
+      <h2>Le fasi</h2>
+      <p>Dal primo contatto al conferimento dell'incarico il percorso è sempre lo stesso, e Le viene rappresentato per intero fin dall'inizio.</p>
+
+      <ol class="fasi">
+        <li class="fase">
+          <span class="fase-n">I</span>
+          <span class="fase-t">Esame degli atti</span>
+          <span class="fase-d">Lettura dei documenti e ricostruzione della cronologia dei fatti.</span>
+        </li>
+        <li class="fase">
+          <span class="fase-n">II</span>
+          <span class="fase-t">Verifica dei termini</span>
+          <span class="fase-d">Computo delle scadenze processuali e delle eventuali decadenze in corso.</span>
+        </li>
+        <li class="fase">
+          <span class="fase-n">III</span>
+          <span class="fase-t">Valutazione della posizione</span>
+          <span class="fase-d">Esame del merito, dei rimedi esperibili e delle difficoltà prevedibili.</span>
+        </li>
+        <li class="fase">
+          <span class="fase-n">IV</span>
+          <span class="fase-t">Preventivo scritto</span>
+          <span class="fase-d">Compenso concordato per iscritto ai sensi dell'art. 13 della legge 247/2012, prima di ogni attività.</span>
+        </li>
+        <li class="fase">
+          <span class="fase-n">V</span>
+          <span class="fase-t">Incarico</span>
+          <span class="fase-d">Conferimento del mandato e definizione delle linee difensive.</span>
+        </li>
+      </ol>
+
+      <p class="rilievo">Se dall'esame risulta che la posizione non ha fondamento, o che il risultato atteso non giustifica il costo del giudizio, la valutazione si ferma alla terza fase e glielo dico.</p>
+    </div>
+
 
   </div>
 </main>

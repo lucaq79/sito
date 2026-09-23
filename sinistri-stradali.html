@@ -70,7 +70,9 @@ img,svg{display:block;max-width:100%}
 .tel-btn{border:1px solid var(--oro);color:var(--oro-l);font-weight:600;font-size:.82rem;letter-spacing:.05em;padding:.6rem 1.2rem;transition:.25s}
 .tel-btn:hover{background:var(--oro);color:var(--navy)}
 @media(max-width:1040px){.menu a:not(.tel-btn){display:none}}
-.esordio{background:linear-gradient(168deg,rgba(13,33,68,.80) 0%,rgba(10,26,51,.82) 52%,rgba(6,17,31,.88) 100%),url("testata-materie.jpg") center 30%/cover no-repeat;color:var(--avorio);position:relative;overflow:hidden}
+.esordio{background:linear-gradient(168deg,#0d2144 0%,#0a1a33 52%,#061520 100%);color:var(--avorio);position:relative;overflow:hidden}
+/* trama di filetti sottilissimi: profondità senza fotografie */
+.esordio::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.5;background:repeating-linear-gradient(115deg,transparent 0 78px,rgba(212,180,121,.055) 78px 79px);}
 .esordio::before{content:"";position:absolute;right:-120px;top:-160px;width:460px;height:460px;border:1px solid var(--filo-scuro);border-radius:50%}
 .esordio .wrap{position:relative;z-index:2;padding:74px 28px 66px;max-width:940px}
 .occhiello{display:flex;align-items:center;gap:14px;margin-bottom:1.1rem}
