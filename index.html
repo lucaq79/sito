@@ -286,6 +286,7 @@ section[id],div[id]{scroll-margin-top:104px}
 .campi label,.consenso{font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--oro-l)}
 .campi label{display:flex;flex-direction:column;gap:.45rem}
 .campi .intero{grid-column:1/-1}
+.campi label em{font-style:normal;color:var(--oro);margin-left:.15rem}
 .campi input,.campi select,.campi textarea{
   font-family:var(--sans);font-size:.95rem;font-weight:400;letter-spacing:normal;text-transform:none;
   color:var(--avorio);background:rgba(243,239,232,.05);
@@ -612,7 +613,7 @@ footer a:hover{color:var(--oro-l)}
          soggiorno comporterebbe. -->
     <div class="modulo-box su">
       <h3>Scrivere allo Studio</h3>
-      <p class="modulo-intro">Per una prima richiesta è sufficiente indicare la materia e il nominativo della controparte, che serve alla verifica preliminare sull'insussistenza di conflitto di interessi. <b>Non inserisca in questa sede i dettagli della vicenda</b>: gli atti e i documenti si esaminano dopo il primo colloquio.</p>
+      <p class="modulo-intro">Sono obbligatori soltanto il nome e l'indirizzo email. Gli altri campi aiutano a inquadrare la richiesta: in particolare il nominativo della controparte, che serve alla verifica preliminare sull'insussistenza di conflitto di interessi. <b>Non inserisca in questa sede i dettagli della vicenda</b>: gli atti e i documenti si esaminano dopo il primo colloquio.</p>
 
       <form class="modulo" action="https://api.web3forms.com/submit" method="POST">
         <input type="hidden" name="access_key" value="209df9a4-5b31-4fed-ad26-f01e31289fd4">
@@ -621,18 +622,18 @@ footer a:hover{color:var(--oro-l)}
         <input type="checkbox" name="botcheck" class="trappola" style="display:none" tabindex="-1" autocomplete="off">
 
         <div class="campi">
-          <label>Nome e cognome
+          <label>Nome e cognome <em>·</em>
             <input type="text" name="nome" required autocomplete="name">
           </label>
           <label>Recapito telefonico
             <input type="tel" name="telefono" autocomplete="tel">
           </label>
-          <label>Indirizzo email
+          <label>Indirizzo email <em>·</em>
             <input type="email" name="email" required autocomplete="email">
           </label>
           <label>Materia
-            <select name="materia" required>
-              <option value="">Selezionare…</option>
+            <select name="materia">
+              <option value="">Selezionare… (facoltativo)</option>
               <option>Diritto penale</option>
               <option>Sinistri stradali e risarcimento del danno</option>
               <option>Diritto civile e contratti</option>
@@ -644,7 +645,7 @@ footer a:hover{color:var(--oro-l)}
             </select>
           </label>
           <label class="intero">Nominativo della controparte
-            <input type="text" name="controparte" required>
+            <input type="text" name="controparte">
           </label>
           <label class="intero">Ha ricevuto un atto? In tal caso, indicare la data della notifica
             <input type="text" name="termini" placeholder="Es.: decreto ingiuntivo notificato il 12 settembre">
