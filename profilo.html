@@ -2,6 +2,11 @@
 <html lang="it">
 <head>
 <meta charset="utf-8">
+<!-- SICUREZZA — su GitHub Pages non si possono impostare intestazioni HTTP:
+     le direttive esprimibili via meta sono riportate qui. Il file _headers,
+     che valeva solo per Netlify, è stato rimosso perché inerte. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' https://gc.zgo.at; img-src 'self' data: https://avvocatolucaquartapelle.goatcounter.com; font-src 'self'; connect-src 'self' https://avvocatolucaquartapelle.goatcounter.com; base-uri 'self'; form-action 'self'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Avv. Luca Quartapelle — Avvocato del Foro di Teramo</title>
 <meta name="description" content="Avvocato del Foro di Teramo, contenzioso civile e difesa penale. Patrocinio a spese dello Stato, incarichi fuori distretto, ricevimento in videoconferenza.">
@@ -9,9 +14,6 @@
 <meta name="theme-color" content="#0a1a33">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://avvocatolucaquartapelle.com/profilo.html">
-<link rel="alternate" hreflang="it" href="https://avvocatolucaquartapelle.com/profilo.html">
-<link rel="alternate" hreflang="en" href="https://avvocatolucaquartapelle.com/en/profile.html">
-<link rel="alternate" hreflang="x-default" href="https://avvocatolucaquartapelle.com/profilo.html">
 <meta property="og:type" content="profile">
 <meta property="og:locale" content="it_IT">
 <meta property="og:site_name" content="Avv. Luca Quartapelle">
@@ -65,11 +67,9 @@ img,svg{display:block;max-width:100%}
 .menu a{font-size:.74rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:rgba(243,239,232,.72);padding:.35rem 0;border-bottom:1px solid transparent;transition:.3s}
 .menu a:hover{color:var(--oro-l);border-bottom-color:var(--oro)}
 .menu a[aria-current]{color:var(--oro-l);border-bottom-color:var(--oro)}
-.lingua{border:1px solid rgba(243,239,232,.32);padding:.34rem .7rem;font-size:.68rem;letter-spacing:.14em}
-.lingua:hover{border-color:var(--oro)}
 .tel-btn{border:1px solid var(--oro);color:var(--oro-l);font-weight:600;font-size:.82rem;letter-spacing:.05em;padding:.6rem 1.2rem;transition:.25s}
 .tel-btn:hover{background:var(--oro);color:var(--navy)}
-@media(max-width:1040px){.menu a:not(.tel-btn):not(.lingua){display:none}}
+@media(max-width:1040px){.menu a:not(.tel-btn){display:none}}
 .esordio{background:linear-gradient(168deg,rgba(13,33,68,.84) 0%,rgba(10,26,51,.86) 52%,rgba(6,17,31,.9) 100%),url("testata-profilo.jpg") center 40%/cover no-repeat;color:var(--avorio);position:relative;overflow:hidden}
 .esordio::before{content:"";position:absolute;right:-120px;top:-160px;width:460px;height:460px;border:1px solid var(--filo-scuro);border-radius:50%}
 .esordio .wrap{position:relative;z-index:2;padding:74px 28px 66px;max-width:940px}
@@ -120,6 +120,12 @@ footer a:hover{color:var(--oro-l)}
 .mbar a.o{background:var(--oro);color:var(--navy)}
 @media(max-width:760px){.mbar{display:flex}}
 </style>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Studio legale Quartapelle", "item": "https://avvocatolucaquartapelle.com/"}, {"@type": "ListItem", "position": 2, "name": "Profilo", "item": "https://avvocatolucaquartapelle.com/profilo.html"}]}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "Person", "name": "Luca Quartapelle", "honorificPrefix": "Avv.", "jobTitle": "Avvocato", "url": "https://avvocatolucaquartapelle.com/profilo.html", "telephone": "+3908611886417", "email": "info@avvocatolucaquartapelle.com", "knowsLanguage": "it", "memberOf": {"@type": "Organization", "name": "Ordine degli Avvocati di Teramo"}, "worksFor": {"@type": "Attorney", "name": "Studio legale Avv. Luca Quartapelle", "address": {"@type": "PostalAddress", "streetAddress": "Via G. D'Annunzio 12", "postalCode": "64100", "addressLocality": "Teramo", "addressRegion": "Abruzzo", "addressCountry": "IT"}}, "knowsAbout": ["Diritto penale", "Risarcimento del danno", "Sinistri stradali", "Diritto civile", "Diritto di famiglia", "Diritto dell'immigrazione", "Esecuzioni forzate", "Diritto del consumatore"]}
+</script>
 </head>
 
 <body>
@@ -143,7 +149,6 @@ footer a:hover{color:var(--oro-l)}
       <a href="index.html#materie">Aree di attività</a>
       <a href="profilo.html" aria-current="page">Profilo</a>
       <a href="index.html#contatti">Contatti</a>
-      <a class="lingua" href="en/profile.html" hreflang="en" lang="en">English</a>
       <a class="tel-btn" href="tel:+3908611886417">0861 1886417</a>
     </nav>
   </div>

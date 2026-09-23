@@ -2,6 +2,11 @@
 <html lang="it">
 <head>
 <meta charset="utf-8">
+<!-- SICUREZZA — su GitHub Pages non si possono impostare intestazioni HTTP:
+     le direttive esprimibili via meta sono riportate qui. Il file _headers,
+     che valeva solo per Netlify, è stato rimosso perché inerte. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' https://gc.zgo.at; img-src 'self' data: https://avvocatolucaquartapelle.goatcounter.com; font-src 'self'; connect-src 'self' https://avvocatolucaquartapelle.goatcounter.com; base-uri 'self'; form-action 'self'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Avvocato a Teramo — Studio Legale Luca Quartapelle</title>
 <meta name="description" content="Studio legale a Teramo: penale, civile e risarcimenti, sinistri stradali, famiglia, immigrazione, esecuzioni. Anche da remoto. Tel. 0861 1886417.">
@@ -92,7 +97,7 @@ section[id],div[id]{scroll-margin-top:104px}
 /* ---------- barra ---------- */
 /* La barra del menu parte SOTTO la fascia dei recapiti (l'altezza esatta la
    calcola lo script in fondo alla pagina): prima le stava sopra, trasparente,
-   e intercettava i clic su English, WhatsApp ed email. */
+   e intercettava i clic sui recapiti. */
 #top{position:fixed;inset:0 0 auto;z-index:1000;transition:background .3s,padding .3s,box-shadow .3s;padding:22px 0}
 #top.giu{background:rgba(12,20,32,.96);backdrop-filter:blur(12px);padding:12px 0;box-shadow:0 6px 30px rgba(0,0,0,.35)}
 #top .wrap{display:flex;align-items:center;justify-content:space-between}
@@ -270,6 +275,7 @@ section[id],div[id]{scroll-margin-top:104px}
 .banda .chiusa a:hover{color:var(--avorio);border-bottom-color:var(--avorio)}
 
 
+
 /* ---------- profilo ---------- */
 .prof{display:grid;grid-template-columns:minmax(0,290px) 1fr;gap:3.4rem;align-items:center}
 /* Cornice del ritratto: un solo filo d'oro, staccato tutt'intorno alla stessa
@@ -336,7 +342,7 @@ footer a:hover{color:var(--oro-l)}
 .modulo .consenso a{color:var(--oro-l);border-bottom:1px solid rgba(212,180,121,.45)}
 .modulo button{cursor:pointer;font-family:inherit}
 .modulo .nascosto{position:absolute;left:-9999px}
-.nota-modulo{font-size:.78rem;color:rgba(243,239,232,.55);margin-top:1.2rem}
+
 @media(max-width:640px){.modulo .riga2{grid-template-columns:1fr}}
 .maps{display:inline-block;margin-top:.35rem;font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--oro-s)}
 .banda .rimando{display:inline-block;margin-top:.5rem;color:var(--oro-l);font-weight:600;letter-spacing:.06em;text-transform:uppercase;font-size:.78rem;border-bottom:1px solid rgba(212,180,121,.5)}
@@ -370,7 +376,6 @@ footer a:hover{color:var(--oro-l)}
       <a href="mailto:info@avvocatolucaquartapelle.com">info@avvocatolucaquartapelle.com</a>
     </div>
     <div class="rec">
-      <a href="en/profile.html" hreflang="en" lang="en">English</a>
     </div>
   </div>
 </div>
@@ -419,8 +424,8 @@ footer a:hover{color:var(--oro-l)}
       <div class="hero-riga" aria-hidden="true"></div>
       <p class="hero-sub">Diritto penale, diritto civile e risarcimento del danno, sinistri stradali, famiglia e persona, immigrazione, tutela del consumatore.<br><span class="hero-remoto">In studio a Teramo e, anche da remoto, in tutta Italia.</span></p>
       <div class="hero-az">
-        <a class="bott oro" href="#assistenza">Rappresentare il caso</a>
-        <a class="bott linea" href="tel:+3908611886417">0861 1886417</a>
+        <a class="bott oro" href="tel:+3908611886417">Telefonare allo Studio</a>
+        <a class="bott linea" href="mailto:info@avvocatolucaquartapelle.com?subject=Richiesta%20di%20assistenza">Scrivere allo Studio</a>
       </div>
     </div>
   </div>
@@ -453,7 +458,7 @@ footer a:hover{color:var(--oro-l)}
   <div class="wrap">
     <div class="testata centro su" style="margin-bottom:3rem">
       <div class="occhiello"><span class="filo-oro"></span><span>Aree di attività</span><span class="filo-oro"></span></div>
-      <p>Lo Studio assiste persone e imprese, in sede giudiziale e stragiudiziale. Il colloquio si svolge su appuntamento, anche in videoconferenza.</p>
+      <p>Assisto persone e imprese, in sede giudiziale e stragiudiziale. Il colloquio si svolge su appuntamento, anche in videoconferenza.</p>
     </div>
     <div class="carosello su">
       <div class="griglia-m" id="materieScorri">
@@ -528,58 +533,34 @@ footer a:hover{color:var(--oro-l)}
       <div class="cornice su">
         <div class="foto">
           <!-- RITRATTO (provvisorio, in attesa della fotografia professionale). -->
-          <img src="ritratto.jpeg" alt="Avv. Luca Quartapelle" style="width:100%;height:100%;object-fit:cover;object-position:50% 18%;display:block">
+          <!-- RITRATTO — per sostituirlo in futuro: salvare la nuova fotografia
+               come  ritratto.jpg  (verticale 4:5) nella cartella del sito. -->
+          <img src="ritratto.jpg" alt="Avv. Luca Quartapelle" width="800" height="1000" style="width:100%;height:100%;object-fit:cover;display:block"> con:
+               <img src="ritratto.jpg" alt="Avv. Luca Quartapelle" style="width:100%;height:100%;object-fit:cover"> -->
+          <svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Luca Quartapelle — Avvocato" style="width:100%;height:100%;display:block">
+            <rect width="400" height="500" fill="#faf8f4"/>
+            <rect x="18" y="18" width="364" height="464" fill="none" stroke="#b99354" stroke-width="1.4"/>
+            <rect x="27" y="27" width="346" height="446" fill="none" stroke="#d9d2c4" stroke-width="1"/>
+            <g fill="#12233f" font-family="Georgia,'Times New Roman',serif" transform="translate(62,182)">
+              <text x="0"  y="58"  font-size="68">L</text>
+              <text x="44" y="46"  font-size="31" textLength="76"  lengthAdjust="spacingAndGlyphs">UCA</text>
+              <text x="22" y="110" font-size="68">Q</text>
+              <text x="70" y="96"  font-size="31" textLength="206" lengthAdjust="spacingAndGlyphs">UARTAPELLE</text>
+              <text x="276" y="126" font-size="15" letter-spacing="4" text-anchor="end">AVVOCATO</text>
+            </g>
+            <line x1="132" y1="286" x2="338" y2="286" stroke="#b99354" stroke-width="2"/>
+          </svg>
         </div>
       </div>
       <div class="prof-txt su">
         <div class="occhiello"><span class="filo-oro"></span><span>Profilo</span></div>
         <p class="apertura">Offro consulenza e assistenza, giudiziale e stragiudiziale, nelle materie civili e nella difesa penale.</p>
-        <p style="margin-top:1.2rem">Iscritto all'Albo dell'Ordine degli Avvocati di Teramo e negli elenchi per il patrocinio a spese dello Stato, settore civile e penale. Il deposito telematico degli atti consente la trattazione da remoto anche fuori distretto; ricevo su appuntamento, anche in videoconferenza.</p>
+        <p style="margin-top:1.2rem">Mi sono laureato in Giurisprudenza all'Università degli Studi di Teramo nel 2007. Ho svolto la pratica forense nello stesso anno e ho poi collaborato con studi legali della provincia fino al conseguimento dell'abilitazione. Sono iscritto all'Albo dell'Ordine degli Avvocati di Teramo e negli elenchi del Consiglio dell'Ordine per il patrocinio a spese dello Stato, settore civile e penale, nonché nell'elenco dei difensori d'ufficio.</p>
+        <p>Opero abitualmente davanti al Tribunale di Teramo e alla Corte d'appello dell'Aquila, oltre che davanti ai giudici di pace del circondario. Il deposito telematico degli atti e la trattazione da remoto mi consentono di assumere incarichi anche fuori distretto, in tutta Italia.</p>
+        <p>Ogni incarico comincia dall'esame dei documenti: prima di esprimere una valutazione ho bisogno di leggere gli atti, ricostruire la cronologia e verificare i termini. Rappresento il quadro per intero, difficoltà comprese — quando una domanda non ha fondamento, o quando il risultato atteso non giustifica il costo del giudizio, preferisco dirlo prima. Il compenso lo concordo per iscritto prima di ogni attività, con preventivo redatto ai sensi dell'art. 13 della legge 31 dicembre 2012 n. 247.</p>
         <a class="bott scuro" style="margin-top:.6rem" href="profilo.html">Il profilo dello Studio</a>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- ================= CONTATTARE LO STUDIO ================= -->
-<!-- Fascia di invito al contatto (ispirata alla chiusa "richiedi una
-     consulenza" dei siti forensi). Il pulsante è all'infinito, come
-     prescrive il §4 n. 1 del LEGGIMI: niente imperativi. -->
-<section id="assistenza" class="banda">
-  <div class="wrap su">
-    <div class="occhiello"><span class="filo-oro"></span><span>Assistenza legale</span></div>
-    <h2>Occorre assistenza legale?</h2>
-    <p>Una telefonata o una email bastano per rappresentare il caso allo Studio: l'esame preliminare non comporta oneri e non impegna, e serve a chiarire subito prospettive e termini che corrono. L'incarico può essere conferito anche a distanza; il colloquio può svolgersi in videoconferenza.</p>
-    <form class="modulo" name="contatto" method="POST" action="/grazie.html" data-netlify="true" netlify-honeypot="sito-web">
-      <input type="hidden" name="form-name" value="contatto">
-      <p class="nascosto"><label>Non compilare: <input name="sito-web" tabindex="-1" autocomplete="off"></label></p>
-      <div class="riga2">
-        <label>Nome e cognome<input type="text" name="nome" required autocomplete="name"></label>
-        <label>Email<input type="email" name="email" required autocomplete="email"></label>
-      </div>
-      <div class="riga2">
-        <label>Telefono <span class="fac">(facoltativo)</span><input type="tel" name="telefono" autocomplete="tel"></label>
-        <label>Materia
-          <select name="materia">
-            <option value="">— scegliere —</option>
-            <option>Diritto penale</option>
-            <option>Diritto civile e risarcimenti</option>
-            <option>Sinistri stradali</option>
-            <option>Famiglia e persona</option>
-            <option>Immigrazione</option>
-            <option>Esecuzioni e opposizioni</option>
-            <option>Altro</option>
-          </select>
-        </label>
-      </div>
-      <label>Descrizione sintetica del caso<textarea name="messaggio" rows="5" required></textarea></label>
-      <label class="consenso"><input type="checkbox" name="privacy" required> Dichiaro di aver letto l'<a href="note-legali.html">informativa privacy</a> relativa al trattamento dei dati conferiti per il riscontro della richiesta.</label>
-      <div class="hero-az" style="margin-top:1.4rem">
-        <button class="bott oro" type="submit">Inviare allo Studio</button>
-        <a class="bott linea" href="tel:+3908611886417">0861 1886417</a>
-      </div>
-      <p class="nota-modulo">L'invio del modulo non costituisce conferimento di incarico e non interrompe né sospende i termini di legge. Per urgenze, telefonare.</p>
-    </form>
   </div>
 </section>
 
@@ -595,12 +576,13 @@ footer a:hover{color:var(--oro-l)}
         <div><dt>Email</dt><dd><a href="mailto:info@avvocatolucaquartapelle.com">info@avvocatolucaquartapelle.com</a></dd></div>
         <div><dt>PEC</dt><dd><a href="mailto:luca.quartapelle@pec-avvocatiteramo.it">luca.quartapelle@pec-avvocatiteramo.it</a></dd></div>
         <div><dt>Ricevimento</dt><dd>Su appuntamento, anche in videoconferenza</dd></div>
-        <div></div>
       </dl>
+      <p style="margin-top:1.6rem;font-size:.88rem;line-height:1.7;color:rgba(243,239,232,.66);max-width:64ch">Nel primo messaggio è utile indicare la materia, il nominativo della controparte e, se ha ricevuto un atto, la data in cui le è stato notificato. Il contatto non costituisce conferimento di incarico e <b style="color:var(--avorio)">non interrompe né sospende i termini di legge</b>.</p>
+
       <!-- PULSANTE «MI PIACE» DELLA PAGINA FACEBOOK — contenuto di terzi:
            viene caricato SOLO dopo il consenso (meccanismo di consenso.js);
            prima del consenso compare il riquadro di cortesia con la scelta.
-           Il dominio facebook.com è ammesso in frame-src nel file _headers. -->
+           Il dominio facebook.com è ammesso in frame-src nella CSP dichiarata in testa alla pagina. -->
       <div style="max-width:420px">
         <div data-terzi
              data-fonte="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Favvocatoquartapelle%2F&amp;width=300&amp;layout=button_count&amp;action=like&amp;size=large&amp;share=false&amp;locale=it_IT"
@@ -674,7 +656,6 @@ footer .chiusa .disclaimer{font-style:italic}
         <ul>
           <li><a href="profilo.html">Profilo</a></li>
           <li><a href="index.html#contatti">Contatti</a></li>
-          <li><a href="en/profile.html" hreflang="en" lang="en">English</a></li>
           <li><a href="note-legali.html">Note legali e privacy</a></li>
           <li><a href="cookie-policy.html">Cookie policy</a></li>
           <li><a href="#" data-ck="preferenze">Preferenze cookie</a></li>
@@ -697,7 +678,7 @@ footer .chiusa .disclaimer{font-style:italic}
      del titolare: il distintivo "Powered by Netlify" copriva il terzo). -->
 <nav class="mbar" aria-label="Azioni rapide">
   <a href="tel:+3908611886417">Telefonare</a>
-  <a class="o" href="#assistenza">Scrivere</a>
+  <a class="o" href="#contatti">Scrivere</a>
 </nav>
 
 <script>
