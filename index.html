@@ -5,7 +5,7 @@
 <!-- SICUREZZA — su GitHub Pages non si possono impostare intestazioni HTTP:
      le direttive esprimibili via meta sono riportate qui. Il file _headers,
      che valeva solo per Netlify, è stato rimosso perché inerte. -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' https://gc.zgo.at; img-src 'self' data: https://avvocatolucaquartapelle.goatcounter.com; font-src 'self'; connect-src 'self' https://avvocatolucaquartapelle.goatcounter.com; base-uri 'self'; form-action 'self'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' https://gc.zgo.at; img-src 'self' data: https://avvocatolucaquartapelle.goatcounter.com; font-src 'self'; connect-src 'self' https://avvocatolucaquartapelle.goatcounter.com; base-uri 'self'; form-action 'self'; frame-src 'none'; object-src 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Avvocato a Teramo — Studio Legale Luca Quartapelle</title>
@@ -555,10 +555,8 @@ footer a:hover{color:var(--oro-l)}
       <div class="prof-txt su">
         <div class="occhiello"><span class="filo-oro"></span><span>Profilo</span></div>
         <p class="apertura">Offro consulenza e assistenza, giudiziale e stragiudiziale, nelle materie civili e nella difesa penale.</p>
-        <p style="margin-top:1.2rem">Mi sono laureato in Giurisprudenza all'Università degli Studi di Teramo nel 2007. Ho svolto la pratica forense nello stesso anno e ho poi collaborato con studi legali della provincia fino al conseguimento dell'abilitazione. Sono iscritto all'Albo dell'Ordine degli Avvocati di Teramo e negli elenchi del Consiglio dell'Ordine per il patrocinio a spese dello Stato, settore civile e penale, nonché nell'elenco dei difensori d'ufficio.</p>
-        <p>Opero abitualmente davanti al Tribunale di Teramo e alla Corte d'appello dell'Aquila, oltre che davanti ai giudici di pace del circondario. Il deposito telematico degli atti e la trattazione da remoto mi consentono di assumere incarichi anche fuori distretto, in tutta Italia.</p>
-        <p>Ogni incarico comincia dall'esame dei documenti: prima di esprimere una valutazione ho bisogno di leggere gli atti, ricostruire la cronologia e verificare i termini. Rappresento il quadro per intero, difficoltà comprese — quando una domanda non ha fondamento, o quando il risultato atteso non giustifica il costo del giudizio, preferisco dirlo prima. Il compenso lo concordo per iscritto prima di ogni attività, con preventivo redatto ai sensi dell'art. 13 della legge 31 dicembre 2012 n. 247.</p>
-        <a class="bott scuro" style="margin-top:.6rem" href="profilo.html">Il profilo dello Studio</a>
+        <p style="margin-top:1.2rem">Sono iscritto all'Albo dell'Ordine degli Avvocati di Teramo e negli elenchi del Consiglio dell'Ordine per il patrocinio a spese dello Stato, settore civile e penale. Opero davanti al Tribunale di Teramo e alla Corte d'appello dell'Aquila e, da remoto, in tutta Italia.</p>
+        <a class="bott scuro" style="margin-top:.6rem" href="profilo.html">Il profilo completo</a>
       </div>
     </div>
   </div>
@@ -579,17 +577,6 @@ footer a:hover{color:var(--oro-l)}
       </dl>
       <p style="margin-top:1.6rem;font-size:.88rem;line-height:1.7;color:rgba(243,239,232,.66);max-width:64ch">Nel primo messaggio è utile indicare la materia, il nominativo della controparte e, se ha ricevuto un atto, la data in cui le è stato notificato. Il contatto non costituisce conferimento di incarico e <b style="color:var(--avorio)">non interrompe né sospende i termini di legge</b>.</p>
 
-      <!-- PULSANTE «MI PIACE» DELLA PAGINA FACEBOOK — contenuto di terzi:
-           viene caricato SOLO dopo il consenso (meccanismo di consenso.js);
-           prima del consenso compare il riquadro di cortesia con la scelta.
-           Il dominio facebook.com è ammesso in frame-src nella CSP dichiarata in testa alla pagina. -->
-      <div style="max-width:420px">
-        <div data-terzi
-             data-fonte="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Favvocatoquartapelle%2F&amp;width=300&amp;layout=button_count&amp;action=like&amp;size=large&amp;share=false&amp;locale=it_IT"
-             data-titolo="Pulsante «Mi piace» della pagina Facebook dello Studio"
-             data-alto="70"
-             data-pagina="https://www.facebook.com/avvocatoquartapelle"></div>
-      </div>
     </div>
   </div>
 </section>
